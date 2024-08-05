@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreateEventActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/createEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créer un Événement"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/eventTitleEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Titre de l'événement"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/createEventTitle"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/eventDescriptionEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Description de l'événement"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventTitleEditText"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/eventLocationEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Lieu de l'événement"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventDescriptionEditText"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/eventDateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner la Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventLocationEditText"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/eventTimeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner l'Heure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventDateButton"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/createEventButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Créer l'Événement"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventTimeButton"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginTop="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

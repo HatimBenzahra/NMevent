@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034762112935",
+    "project_id": "nmevents-test",
+    "storage_bucket": "nmevents-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034762112935:android:563efd29c19a7b4b933082",
+        "android_client_info": {
+          "package_name": "com.example.nmevents"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDTG-Vmk3oW_vpkmlGmeOEE7ROy1b4Va4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
